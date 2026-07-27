@@ -1,7 +1,26 @@
 aid: graneet
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/graneet.png
 name: Graneet
-description: Graneet is a company surfaced as a portfolio company of point-nine and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Graneet is a French vertical-SaaS ERP for the construction and public-works
+  (BTP) sector, built for small and mid-sized contractors (roughly EUR 2M to 100M in
+  revenue) to protect project profitability from the office to the job site. It unifies
+  cost estimating and quotations, progress (situation) invoicing, purchase and supplier-invoice
+  management, project planning and labor tracking, cash and bank reconciliation, and
+  real-time margin dashboards, with a companion mobile app and prebuilt integrations
+  to accounting tools such as Sage 100 and Pennylane. The product is delivered as a
+  cloud application (app.graneet.com) backed by internal Main, BFF, and Quotation APIs;
+  there is no public developer API or OpenAPI at this time.
 url: https://raw.githubusercontent.com/api-evangelist/graneet/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Construction
+- BTP
+- ERP
+- SaaS
+- Invoicing
+- Project Management
+- Accounting
+- Fintech
+- France
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/graneet-domain-security.yml
 - type: Website
-  url: https://www.graneet.fr
+  url: https://www.graneet.com
+- type: Support
+  url: https://help.graneet.fr
+- type: StatusPage
+  url: https://status.graneet.fr/
+- type: Pricing
+  url: https://www.graneet.com/fr/tarifs
+- type: Blog
+  url: https://www.graneet.com/fr/ressources
+- type: Login
+  url: https://app.graneet.com/
+- type: TermsOfService
+  url: https://www.graneet.com/fr/mentions-legales
+- type: PrivacyPolicy
+  url: https://www.graneet.com/fr/politique-de-confidentialite
+- type: LinkedIn
+  url: https://fr.linkedin.com/company/graneetapp
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
